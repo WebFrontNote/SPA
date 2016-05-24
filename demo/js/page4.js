@@ -26,6 +26,10 @@ define(function (require, exports, module) {
             that.$container.on('click', '#backButton', function () {
                 that.close();
             });
+
+            that.$container.on('click', '#openPage5Button', function () {
+                that.openPage('page5', null, true);
+            });
         };
 
         /**
