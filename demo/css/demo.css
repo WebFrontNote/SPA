@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei UI Light', Arial, Helvetica;
+    font-size: 12px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+button, input, select {
+    font-family: 'Microsoft YaHei UI Light', Arial, Helvetica;
+}
+
+/* 基础样式 */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.demo-page {
+    background-color: #eee;
+}
+
+.demo-page-wrapper {
+    position: relative;
+    width: 6.4rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tips {
+    color: #999;
+    font-size: 0.24rem;
+}
+
+.title {
+    color: #333;
+    font-size: 0.36rem;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 0.8rem;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+    background-color: #e8ae26;
+    color: #fff;
+    border-radius: 0.1rem;
+    border: 1px solid transparent;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-clip: padding-box;
+    box-sizing: content-box;
+}
+
+.button:disabled {
+    background-color: #ffd36c;
+    color: #ffe5a7;
+}
+
+.button:active {
+    background-color: #d9a426;
+    color: #f4d9aa;
+}
+
+.page {
+    padding: 0.3rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+}

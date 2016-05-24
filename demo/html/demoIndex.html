@@ -6,10 +6,16 @@
 <meta charset="utf-8">
 <head>
     <title>Demo Page</title>
-    <script>
-        location.replace('demo/html/demoIndex.html');
-    </script>
+    <script type="text/javascript" src="../../lib/resize.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/demo.css"/>
 </head>
-<body>
+<body class="demo-page">
+<div class="demo-page-wrapper" id="pageWrapper">
+</div>
+
+<script type="text/javascript" src="../../lib/sea.js"></script>
+<script>
+    seajs.use("../js/demoIndex");
+</script>
 </body>
 </html>
