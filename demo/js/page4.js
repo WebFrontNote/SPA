@@ -4,19 +4,27 @@ define(function (require, exports, module) {
     require('../../lib/jquery.min.js');
     var PageBase = require('../../lib/basePage.js');
 
-    var Page2 = PageBase.extend(new function () {
+    var Page4 = PageBase.extend(new function () {
         var that;
 
         /**
          * 初始化时被调用
+         * @param $el
+         * @param tpl
+         * @param data
+         * @param indexRef
          */
         this.onInit = function ($el, tpl, data, indexRef) {
             this._super($el, tpl, data, indexRef);
             that = this;
             that.initTemplate(tpl, {});
 
-            that.$container.on('click', '#actionButton', function () {
-                that.openPage('page3', {page: 'page2'});
+            that.$container.on('click', 'li', function () {
+                that.close({select: $(this).text()});
+            });
+
+            that.$container.on('click', '#backButton', function () {
+                that.close();
             });
         };
 
@@ -29,5 +37,5 @@ define(function (require, exports, module) {
 
     }());
 
-    module.exports = Page2;
+    module.exports = Page4;
 });

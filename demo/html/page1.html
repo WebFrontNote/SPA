@@ -1,5 +1,17 @@
 <div class="page">
     <p class="title">这是一个演示页面</p>
+
     <p class="tips">点击下面链接打开下一个页面。</p>
     <a href="#page2">打开Page2</a>
+
+    <p class="tips">页面还集成了Backbone的template。</p>
+
+    <p><%- tips %></p>
+    <ul>
+        <% for(var i = 0; i < list.length; i++) { %>
+        <li><%- list[i] %></li>
+        <% } %>
+    </ul>
+
+    <a href="#page0">打开静态页面page static</a>
 </div>

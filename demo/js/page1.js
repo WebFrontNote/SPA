@@ -13,7 +13,10 @@ define(function (require, exports, module) {
         this.onInit = function ($el, tpl, data, indexRef) {
             this._super($el, tpl, data, indexRef);
             that = this;
-            that.initTemplate(tpl, {});
+            that.initTemplate(tpl, {
+                tips: '下面内容由template生成：',
+                list: ['1.....', '2.<<<<<', '3.#####']
+            });
 
         };
 
